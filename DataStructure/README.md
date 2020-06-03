@@ -6,7 +6,7 @@
 - stack
 - queue
 - graph
-- [Tree](https://github.com/JoongChangYang/Algorithm/DataStructure/Tree)
+- [Tree](https://github.com/JoongChangYang/Algorithm/tree/master/DataStructure/Tree)
 
 
 
