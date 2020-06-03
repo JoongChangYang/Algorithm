@@ -6,7 +6,7 @@
 
 ## Contents
 
-- [DataStructure](https://github.com/JoongChangYang/Algorithm/DataStructure)
+- [DataStructure](https://github.com/JoongChangYang/Algorithm/tree/master/DataStructure)
 
 
 
