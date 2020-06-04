@@ -7,7 +7,7 @@
 ## Contents
 
 - 프로그래머스
-  - [멀쩡한 사각형](https://github.com/JoongChangYang/Algorithm/NormalSquare.md)
+  - [멀쩡한 사각형](https://github.com/JoongChangYang/Algorithm/blob/master/NormalSquare.md)
 
 
 
