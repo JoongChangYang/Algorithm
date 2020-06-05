@@ -22,6 +22,10 @@
 
   ![572957326.92.png](https://grepp-programmers.s3.amazonaws.com/files/production/ee895b2cd9/567420db-20f4-4064-afc3-af54c4a46016.png)
 
+## 풀이
+
+
+
 ``` swift
 func gcd(_ w: Int, _ h: Int) -> Int { // 취대 공약수 유클리드 호제법
     
