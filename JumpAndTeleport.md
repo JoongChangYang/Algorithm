@@ -62,7 +62,7 @@
   }
   ```
 
-- 다른 풀이 (비용 1/10)
+- 다른 풀이
 
   ```swift
   func solution(_ n:Int) -> Int {
