@@ -13,6 +13,8 @@
   
   - [스킬트리](https://github.com/JoongChangYang/Algorithm/blob/master/SkillTree.md)
   
+  - [소수 만들기](https://github.com/JoongChangYang/Algorithm/blob/master/PrimeNumber.md)
+  
     
 
 
