@@ -15,6 +15,8 @@
   
   - [소수 만들기](https://github.com/JoongChangYang/Algorithm/blob/master/PrimeNumber.md)
   
+  - [점프와 순간이동](https://github.com/JoongChangYang/Algorithm/blob/master/JumpAndTeleport.md)
+  
     
 
 
