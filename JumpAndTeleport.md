@@ -66,12 +66,11 @@
 
   ```swift
   func solution(_ n:Int) -> Int {
-      var ans:Int = 0
-      var c:Int = n
+      var ans = 0
+      var c = n
       while c > 0 {
-          c=c&(c-1)
-        	// 비트연산(AND)
-          ans=ans+1
+          c = c & (c - 1) // 비트연산(AND)
+          ans += 1
       }
       return ans
   }
