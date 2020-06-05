@@ -68,5 +68,23 @@
   }
   ```
 
+- 다른 풀이
+
+  ```swift
+  func solution(_ skill:String, _ skill_trees:[String]) -> Int {
+      
+      func available(_ s: String, _ t: String) -> Bool {
+          let alza = t.filter { s.contains($0) }
+          // 선행 스킬에 들어있는 스킬 fillter
+          return s.starts(with: alza)
+          // 순서확인
+      }
+      
+      return skill_trees.map { available(skill, $0) }.filter { $0 }.count
+      // 순서가 맞는 스킬트리만을 fillter한 배열의 count 반환
+      
+  }
+  ```
+
   
 
