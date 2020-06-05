@@ -44,26 +44,36 @@
 - 내 풀이
 
   ```swift
-  func move(_ n: Int, _ energy: Int) -> Int {
-      guard n > 0 else { return energy }
-      // n이 0보다 크지않으면 도착한것으로 판단하고 현재 energy를 반환한다.
+  func move(_ n: Int, _ ans: Int) -> Int {
+      guard n > 0 else { return ans }
+      // n이 0보다 크지않으면 도착한것으로 판단하고 현재 ans를 반환
       
-      var energy = energy
+      let canTeleport = n % 2 == 0
+      let ans = canTeleport ? ans: ans + 1
+      let n = canTeleport ? n / 2: n - 1
+      // n이 2로 나누어 떨어지면 텔레포트, 아니면 점프
       
-      if n % 2 == 0 {
-          // 2로 나누어 떨어지면 순간이동
-          energy = move(n / 2, energy)
-      } else {
-          // 2로 나누어 떨어지지 않으면 점프
-          energy = move(n - 1, energy + 1)
-      }
-      
-      return energy
+      return move(n, ans)
   }
   
   func solution(_ n:Int) -> Int {
       // 도착지 부터 반대로 계산
       return move(n, 0)
+  }
+  ```
+
+- 다른 풀이 (비용 1/10)
+
+  ```swift
+  func solution(_ n:Int) -> Int {
+      var ans:Int = 0
+      var c:Int = n
+      while c > 0 {
+          c=c&(c-1)
+        	// 비트연산(AND)
+          ans=ans+1
+      }
+      return ans
   }
   ```
 
