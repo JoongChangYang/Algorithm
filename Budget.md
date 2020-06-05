@@ -35,26 +35,32 @@
   - 입출력 예 #2
     모든 부서의 물품을 구매해주면 10원이 됩니다. 따라서 최대 4개 부서의 물품을 구매해 줄 수 있습니다.
 
-  ## 풀이
+  
+
+## 풀이
+
+- 내 풀이
 
   ```swift
   func solution(_ d:[Int], _ budget:Int) -> Int {
       // 예산 목록 오름 차순 정렬
-      // 가장 작은 신청 예산부터 처리해야 최대한 많은 부서에 지원할 수 있음
+    // 가장 작은 신청 예산부터 처리해야 최대한 많은 부서에 지원할 수 있음
       var amounts = d.sorted(by: { $0 < $1 })
       var budget = budget
       var result = 0
-      
+  
       while !amounts.isEmpty {
           let amount = amounts.removeFirst() // amount 배열에서 하나씩 꺼내서 예산 내에서 줄 수 있는지 판단
-          guard budget - amount >= 0 else { break } // 예산 초과하면 반복문 중단
+        guard budget - amount >= 0 else { break } // 예산 초과하면 반복문 중단
           budget -= amount // 예산에서 현재 꺼낸 신청금액 차감
           result += 1
       }
-      
+  
       return result
   }
   ```
+
+  
 
   
 

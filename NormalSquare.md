@@ -24,40 +24,42 @@
 
 ## 풀이
 
+- 내 풀이
 
+  ```swift
+  func gcd(_ w: Int, _ h: Int) -> Int { // 취대 공약수 유클리드 호제법
+      
+      var a = w
+      var b = h
+      
+      if w < h {
+          a = h
+          b = w
+      }
+      
+      while b != 0 {
+          let temp = a % b
+          a = b
+          b = temp
+      }
+      
+      return a
+  }
+  
+  func solution(_ w:Int, _ h:Int) -> Int64 {
+      var answer: Int64 = 0
+      
+      let g = gcd(w, h)
+      
+      
+      let row = (w / g)
+      let column = (h / g)
+      let numberOfUnusableSquare = (row + column - 1) * g
+      answer = Int64(w * h) - Int64(numberOfUnusableSquare)
+      
+      return answer
+  }
+  ```
 
-``` swift
-func gcd(_ w: Int, _ h: Int) -> Int { // 취대 공약수 유클리드 호제법
-    
-    var a = w
-    var b = h
-    
-    if w < h {
-        a = h
-        b = w
-    }
-    
-    while b != 0 {
-        let temp = a % b
-        a = b
-        b = temp
-    }
-    
-    return a
-}
-
-func solution(_ w:Int, _ h:Int) -> Int64 {
-    var answer: Int64 = 0
-    
-    let g = gcd(w, h)
-    
-    
-    let row = (w / g)
-    let column = (h / g)
-    let numberOfUnusableSquare = (row + column - 1) * g
-    answer = Int64(w * h) - Int64(numberOfUnusableSquare)
-    
-    return answer
-}
-```
+  
 
