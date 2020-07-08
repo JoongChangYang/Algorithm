@@ -15,4 +15,5 @@
 - [점프와 순간이동](https://github.com/JoongChangYang/Algorithm/blob/master/점프와순간이동.md)
 - [핸드폰 번호 가리기](https://github.com/JoongChangYang/Algorithm/blob/master/핸드폰번호가리기.md)
 - [기능 개발](https://github.com/JoongChangYang/Algorithm/blob/master/기능개발.md)
+- [실패율](https://github.com/JoongChangYang/Algorithm/blob/master/실패율.md)
 
